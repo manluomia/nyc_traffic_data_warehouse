@@ -6,8 +6,8 @@ WITH
 taxi_trips AS (
     SELECT
         weekday(pickup_datetime) as weekday,
-        CAST(pulocationid AS VARCHAR) AS start_station_id,
-        CAST(dolocationid AS VARCHAR) AS end_station_id
+        pulocationid, 
+        dolocationid
     FROM {{ ref('mart__fact_all_taxi_trips') }}
 ),
 trip_locations AS (
@@ -16,14 +16,14 @@ trip_locations AS (
         s.borough AS start_borough,
         e.borough AS end_borough
     FROM taxi_trips t
-    JOIN {{ ref('mart__dim_locations') }} s ON t.start_station_id = CAST(s.locationid AS VARCHAR)
-    JOIN {{ ref('mart__dim_locations') }} e ON t.end_station_id = CAST(e.locationid AS VARCHAR)
+    JOIN {{ ref('mart__dim_locations') }} s ON t.pulocationid = s.locationid 
+    JOIN {{ ref('mart__dim_locations') }} e ON t.dolocationid = e.locationid 
 ),
 
 aggregated_data AS (
     SELECT
         weekday,
-        COUNT(*) AS total_trips,
+        COUNT(*) AS taxi_trips,
         COUNT(*) FILTER (WHERE start_borough <> end_borough) AS diff_borough_trips
     FROM trip_locations
     GROUP BY weekday
@@ -31,9 +31,9 @@ aggregated_data AS (
 
 SELECT
     weekday,
-    total_trips,
+    taxi_trips,
     diff_borough_trips,
-    ROUND((diff_borough_trips::FLOAT / total_trips) * 100, 2) AS percent_diff_start_end
+    ROUND((diff_borough_trips::FLOAT / taxi_trips) * 100, 2) AS percent_diff_start_end
 FROM aggregated_data
 ORDER BY weekday
 
