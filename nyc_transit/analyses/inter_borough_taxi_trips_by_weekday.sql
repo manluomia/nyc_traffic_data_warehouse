@@ -2,14 +2,7 @@
 --- count of total trips, trips starting and ending in a different borough, and
 --- percentage w/ different start/end
 
-WITH bike_trips AS (
-    SELECT
-        weekday(started_at_ts) as weekday,
-        CAST(start_station_id AS VARCHAR) as start_station_id,
-        CAST(end_station_id AS VARCHAR) as end_station_id
-    FROM {{ ref('mart__fact_all_bike_trips') }}
-),
-
+WITH 
 taxi_trips AS (
     SELECT
         weekday(pickup_datetime) as weekday,
@@ -17,19 +10,12 @@ taxi_trips AS (
         CAST(dolocationid AS VARCHAR) AS end_station_id
     FROM {{ ref('mart__fact_all_taxi_trips') }}
 ),
-
-combined_trips AS (
-    SELECT * FROM bike_trips
-    UNION ALL
-    SELECT * FROM taxi_trips
-),
-
 trip_locations AS (
     SELECT
         t.weekday,
         s.borough AS start_borough,
         e.borough AS end_borough
-    FROM combined_trips t
+    FROM taxi_trips t
     JOIN {{ ref('mart__dim_locations') }} s ON t.start_station_id = CAST(s.locationid AS VARCHAR)
     JOIN {{ ref('mart__dim_locations') }} e ON t.end_station_id = CAST(e.locationid AS VARCHAR)
 ),
