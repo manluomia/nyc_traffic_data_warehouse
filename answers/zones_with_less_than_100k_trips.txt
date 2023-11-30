@@ -1,0 +1,50 @@
+┌──────────────────────────────┐
+│             Zone             │
+│           varchar            │
+├──────────────────────────────┤
+│ Saint George/New Brighton    │
+│ Queens Village               │
+│ Flushing Meadows-Corona Park │
+│ Parkchester                  │
+│ Rosedale                     │
+│ Prospect Park                │
+│ Battery Park                 │
+│ Coney Island                 │
+│ Starrett City                │
+│ West Brighton                │
+│ Dyker Heights                │
+│ Fresh Meadows                │
+│ Douglaston                   │
+│ Heartland Village/Todt Hill  │
+│ North Corona                 │
+│ Arrochar/Fort Wadsworth      │
+│ Broad Channel                │
+│ Jamaica Estates              │
+│ Pelham Bay                   │
+│ Oakwood                      │
+│    ·                         │
+│    ·                         │
+│    ·                         │
+│ Cambria Heights              │
+│ Crotona Park                 │
+│ Pelham Bay Park              │
+│ Green-Wood Cemetery          │
+│ Cobble Hill                  │
+│ Astoria Park                 │
+│ City Island                  │
+│ Bay Terrace/Fort Totten      │
+│ Stapleton                    │
+│ Port Richmond                │
+│ Freshkills Park              │
+│ Murray Hill-Queens           │
+│ Mariners Harbor              │
+│ Rego Park                    │
+│ Charleston/Tottenville       │
+│ Brighton Beach               │
+│ Van Cortlandt Park           │
+│ Manhattanville               │
+│ Allerton/Pelham Gardens      │
+│ Briarwood/Jamaica Hills      │
+├──────────────────────────────┤
+│     120 rows (40 shown)      │
+└──────────────────────────────┘

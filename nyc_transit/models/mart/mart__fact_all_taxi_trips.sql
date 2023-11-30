@@ -18,8 +18,8 @@ with trips_renamed as
         dropoff_datetime,
         datediff('minute', pickup_datetime, dropoff_datetime) as duration_min,
         datediff('second', pickup_datetime, dropoff_datetime) as duration_sec,
-        pulocationid,
-        dolocationid
+        pulocationid::varchar as pulocationid,
+        dolocationid::varchar as dolocationid
     from {{ ref('stg__fhvhv_tripdata')}}
 
     union all
@@ -30,8 +30,8 @@ with trips_renamed as
         lpep_dropoff_datetime,
         datediff('minute', lpep_pickup_datetime, lpep_dropoff_datetime) as duration_min,
         datediff('second', lpep_pickup_datetime, lpep_dropoff_datetime) as duration_sec,
-        pulocationid,
-        dolocationid
+        pulocationid::varchar as pulocationid,
+        dolocationid::varchar as dolocationid
     from {{ ref('stg__green_tripdata')}}
 
     union all
@@ -42,8 +42,8 @@ with trips_renamed as
         tpep_dropoff_datetime,
         datediff('minute', tpep_pickup_datetime, tpep_dropoff_datetime) as duration_min,
         datediff('second', tpep_pickup_datetime, tpep_dropoff_datetime) as duration_sec,
-        pulocationid,
-        dolocationid
+        pulocationid::varchar as pulocationid,
+        dolocationid::varchar as dolocationid
     from {{ ref('stg__yellow_tripdata')}}
 
 )

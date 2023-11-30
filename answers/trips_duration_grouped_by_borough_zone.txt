@@ -1,0 +1,50 @@
+┌───────────────┬───────────────────────────────────┬─────────────┬────────────────────┐
+│    Borough    │               Zone                │ total_trips │  average_duration  │
+│    varchar    │              varchar              │   int128    │       double       │
+├───────────────┼───────────────────────────────────┼─────────────┼────────────────────┤
+│ Brooklyn      │ Sheepshead Bay                    │      112027 │  934.8135628018246 │
+│ Staten Island │ Saint George/New Brighton         │       79076 │  941.0957812737114 │
+│ Bronx         │ Mount Hope                        │      199348 │    900.54425928527 │
+│ Manhattan     │ Lincoln Square West               │      235370 │  990.5282661341718 │
+│ Bronx         │ Soundview/Bruckner                │      100483 │  868.5632992645523 │
+│ Manhattan     │ Sutton Place/Turtle Bay North     │      308887 │  960.9971283997061 │
+│ Bronx         │ Highbridge                        │      139357 │  929.2528039495684 │
+│ Manhattan     │ Inwood                            │      130205 │  975.1585576590761 │
+│ Queens        │ South Jamaica                     │      116991 │  946.4878409450299 │
+│ Manhattan     │ East Harlem South                 │      316546 │ 1044.0812678094178 │
+│ Manhattan     │ Morningside Heights               │      177422 │ 1059.1881502857593 │
+│ Staten Island │ Heartland Village/Todt Hill       │       32996 │ 1053.3932294823614 │
+│ Manhattan     │ TriBeCa/Civic Center              │      403168 │  1106.946838538773 │
+│ Staten Island │ West Brighton                     │       25899 │  999.3502837947411 │
+│ Queens        │ Baisley Park                      │      119460 │  962.5207182320441 │
+│ Manhattan     │ Flatiron                          │      309776 │  989.2352506327153 │
+│ Manhattan     │ Meatpacking/West Village West     │      210696 │ 1071.5611354748073 │
+│ Queens        │ Briarwood/Jamaica Hills           │       75436 │ 1000.4886791452357 │
+│ Queens        │ Sunnyside                         │      204974 │ 1059.8859904182968 │
+│ Bronx         │ Parkchester                       │       95768 │  975.7276125636956 │
+│   ·           │      ·                            │         ·   │          ·         │
+│   ·           │      ·                            │         ·   │          ·         │
+│   ·           │      ·                            │         ·   │          ·         │
+│ Manhattan     │ Little Italy/NoLiTa               │      253023 │ 1076.9421119819146 │
+│ Queens        │ Glen Oaks                         │       24764 │  1144.458366984332 │
+│ Queens        │ Cambria Heights                   │       37529 │ 1027.3760292040822 │
+│ Manhattan     │ Greenwich Village North           │      264173 │  1022.747756205214 │
+│ Staten Island │ South Beach/Dongan Hills          │       26885 │ 1090.4638646085177 │
+│ Queens        │ South Ozone Park                  │      187691 │  888.7387780980441 │
+│ Manhattan     │ Two Bridges/Seward Park           │      170368 │  1086.939049586777 │
+│ Manhattan     │ SoHo                              │      215251 │ 1073.3164166484707 │
+│ Queens        │ Astoria Park                      │        1396 │ 1039.7428366762178 │
+│ Brooklyn      │ Park Slope                        │      301182 │ 1166.4367292866107 │
+│ Manhattan     │ Greenwich Village South           │      240402 │ 1020.4968095107362 │
+│ Bronx         │ Pelham Bay                        │       44926 │  919.1102257044919 │
+│ Bronx         │ Belmont                           │      110060 │  940.5876158459023 │
+│ Staten Island │ Oakwood                           │       10949 │ 1102.0979084847932 │
+│ Queens        │ Jamaica                           │      222145 │  976.8564991334489 │
+│ Manhattan     │ Chinatown                         │       77615 │ 1137.0160922502093 │
+│ Queens        │ Far Rockaway                      │       67725 │  1442.535134736065 │
+│ Manhattan     │ East Harlem North                 │      325581 │  988.7385289682137 │
+│ Staten Island │ Eltingville/Annadale/Prince's Bay │       13082 │ 1007.2203791469194 │
+│ Queens        │ Bayside                           │       60409 │  979.8633316227714 │
+├───────────────┴───────────────────────────────────┴─────────────┴────────────────────┤
+│ 262 rows (40 shown)                                                        4 columns │
+└──────────────────────────────────────────────────────────────────────────────────────┘

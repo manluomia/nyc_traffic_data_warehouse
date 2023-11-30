@@ -1,0 +1,50 @@
+┌──────────────────────────────────┬───────────────────────┐
+│               Zone               │ avg_time_diff_seconds │
+│             varchar              │        double         │
+├──────────────────────────────────┼───────────────────────┤
+│ Jackson Heights                  │     1534.972254240079 │
+│ Lincoln Square East              │    1103.8322955962997 │
+│ Lower East Side                  │     190.3441819113348 │
+│ Co-Op City                       │    3064.9426122949103 │
+│ East Concourse/Concourse Village │      308.306871823911 │
+│ Gravesend                        │     1245.785028109281 │
+│ Park Slope                       │    209.69745435469036 │
+│ Saint Michaels Cemetery/Woodside │     5435.846518033916 │
+│ Soundview/Castle Hill            │     312.4152354570637 │
+│ Carroll Gardens                  │      815.813537428147 │
+│ Inwood Hill Park                 │    7056.2585513078475 │
+│ Randalls Island                  │    13526.170987786587 │
+│ Yorkville West                   │    202.69111162459322 │
+│ Country Club                     │    6095.2276061776065 │
+│ Ridgewood                        │    309.79819686364146 │
+│ Union Sq                         │     884.7500905828358 │
+│ Woodlawn/Wakefield               │      563.316648084556 │
+│ Bloomingdale                     │     861.9229331004176 │
+│ Central Harlem                   │      227.662529693566 │
+│ Upper East Side South            │    1174.4660047557302 │
+│       ·                          │             ·         │
+│       ·                          │             ·         │
+│       ·                          │             ·         │
+│ Rockaway Park                    │    3107.0279937026467 │
+│ UN/Turtle Bay South              │     253.7063910982566 │
+│ Middle Village                   │      920.427955171459 │
+│ NA                               │    2153.5594243426663 │
+│ New Dorp/Midland Beach           │     3445.335624659029 │
+│ Springfield Gardens South        │     942.1929944952486 │
+│ Great Kills                      │    3184.2506555062523 │
+│ Lenox Hill West                  │     171.0420362190693 │
+│ Melrose South                    │     359.4678057359461 │
+│ Saint Albans                     │     429.8156947346214 │
+│ Windsor Terrace                  │    1350.2226023004232 │
+│ Highbridge Park                  │    17729.852891633913 │
+│ Hillcrest/Pomonok                │     860.0148294410022 │
+│ Longwood                         │     706.5001286425415 │
+│ Marble Hill                      │    1541.6150072009177 │
+│ Sheepshead Bay                   │     563.7659739703283 │
+│ East Williamsburg                │     256.9453017253654 │
+│ Howard Beach                     │     1447.292985310631 │
+│ Ocean Parkway South              │    1732.0120666959192 │
+│ Richmond Hill                    │    449.11413089854085 │
+├──────────────────────────────────┴───────────────────────┤
+│ 262 rows (40 shown)                            2 columns │
+└──────────────────────────────────────────────────────────┘
