@@ -6,8 +6,8 @@ with trips_renamed as
         dropoff_datetime as dropoff_datetime,
         datediff('minute', pickup_datetime, dropoff_datetime) as duration_min,
         datediff('second', pickup_datetime, dropoff_datetime) as duration_sec,
-        pulocationid,
-        dolocationid
+        pulocationid::varchar as pulocationid,
+        dolocationid::varchar as dolocationid
     from {{ ref('stg__fhv_tripdata')}}
 
     union all
